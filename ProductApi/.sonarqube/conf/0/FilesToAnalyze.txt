@@ -1,0 +1,16 @@
+﻿D:\MS-casestudy\Api\ProductApi\Controllers\ProductsController.cs
+D:\MS-casestudy\Api\ProductApi\Data\ProductApiContext.cs
+D:\MS-casestudy\Api\ProductApi\Migrations\20220816030145_initial1.cs
+D:\MS-casestudy\Api\ProductApi\Migrations\20220816030145_initial1.Designer.cs
+D:\MS-casestudy\Api\ProductApi\Migrations\ProductApiContextModelSnapshot.cs
+D:\MS-casestudy\Api\ProductApi\Models\Product.cs
+D:\MS-casestudy\Api\ProductApi\Program.cs
+D:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\ProductApi.GlobalUsings.g.cs
+D:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+D:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\ProductApi.AssemblyInfo.cs
+D:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\ProductApi.MvcApplicationPartsAssemblyInfo.cs
+D:\MS-casestudy\Api\ProductApi\appsettings.Development.json
+D:\MS-casestudy\Api\ProductApi\appsettings.json
+D:\MS-casestudy\Api\ProductApi\Properties\launchSettings.json
+D:\MS-casestudy\Api\ProductApi\Properties\serviceDependencies.json
+D:\MS-casestudy\Api\ProductApi\Properties\serviceDependencies.local.json

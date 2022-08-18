@@ -1,0 +1,12 @@
+I
+@D:\MS-casestudy\Api\ProductApi\Controllers\ProductsController.csutf-8A
+8D:\MS-casestudy\Api\ProductApi\Data\ProductApiContext.csutf-8M
+DD:\MS-casestudy\Api\ProductApi\Migrations\20220816030145_initial1.csutf-8X
+MD:\MS-casestudy\Api\ProductApi\Migrations\20220816030145_initial1.Designer.csutf-8V
+KD:\MS-casestudy\Api\ProductApi\Migrations\ProductApiContextModelSnapshot.csutf-89
+0D:\MS-casestudy\Api\ProductApi\Models\Product.csutf-82
+)D:\MS-casestudy\Api\ProductApi\Program.csutf-8W
+LD:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\ProductApi.GlobalUsings.g.csutf-8i
+^D:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8U
+JD:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\ProductApi.AssemblyInfo.csutf-8h
+]D:\MS-casestudy\Api\ProductApi\obj\Debug\net6.0\ProductApi.MvcApplicationPartsAssemblyInfo.csutf-8
