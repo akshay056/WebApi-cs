@@ -14,6 +14,6 @@ namespace CartApi.Data
         {
         }
 
-        public DbSet<CartApi.Models.Cart> Cart { get; set; } = default!;
+        public DbSet<CartApi.Models.Cart> Carts { get; set; } = default!;
     }
 }

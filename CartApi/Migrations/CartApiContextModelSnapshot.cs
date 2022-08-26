@@ -36,7 +36,6 @@ namespace CartApi.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Qty")
@@ -44,7 +43,7 @@ namespace CartApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cart");
+                    b.ToTable("Carts");
                 });
 #pragma warning restore 612, 618
         }

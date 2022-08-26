@@ -264,3 +264,8 @@ D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\System.Web.Http.dll
 D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\System.Web.Http.Cors.dll
 D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\ProductApi.deps.json
+D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\ProductApi.runtimeconfig.json
+D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\ProductApi.exe
+D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\ProductApi.dll
+D:\MS-casestudy\Api\CartApi\bin\Debug\net6.0\ProductApi.pdb

@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "lrDs9gxv8xopKfdpbjs875pLv7B6kjhmirlFl5GnJCM=",
+  "Hash": "EmqAu4KcEFd4+po4r+lvMgBG8aMQzaRF3a8EtU8rSxg=",
   "Source": "CartApi",
   "BasePath": "_content/CartApi",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\MS-casestudy\\Api\\ProductApi\\ProductApi.csproj",
+      "Version": 2,
+      "Source": "ProductApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

@@ -1,0 +1,16 @@
+﻿D:\MS-casestudy\Api\CartApi\Controllers\CartsController.cs
+D:\MS-casestudy\Api\CartApi\Data\CartApiContext.cs
+D:\MS-casestudy\Api\CartApi\Migrations\20220816120505_initial1.cs
+D:\MS-casestudy\Api\CartApi\Migrations\20220816120505_initial1.Designer.cs
+D:\MS-casestudy\Api\CartApi\Migrations\CartApiContextModelSnapshot.cs
+D:\MS-casestudy\Api\CartApi\Models\Cart.cs
+D:\MS-casestudy\Api\CartApi\Program.cs
+D:\MS-casestudy\Api\CartApi\obj\Debug\net6.0\CartApi.GlobalUsings.g.cs
+D:\MS-casestudy\Api\CartApi\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+D:\MS-casestudy\Api\CartApi\obj\Debug\net6.0\CartApi.AssemblyInfo.cs
+D:\MS-casestudy\Api\CartApi\obj\Debug\net6.0\CartApi.MvcApplicationPartsAssemblyInfo.cs
+D:\MS-casestudy\Api\CartApi\appsettings.Development.json
+D:\MS-casestudy\Api\CartApi\appsettings.json
+D:\MS-casestudy\Api\CartApi\Properties\launchSettings.json
+D:\MS-casestudy\Api\CartApi\Properties\serviceDependencies.json
+D:\MS-casestudy\Api\CartApi\Properties\serviceDependencies.local.json

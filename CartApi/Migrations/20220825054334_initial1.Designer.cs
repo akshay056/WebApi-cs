@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CartApi.Migrations
 {
     [DbContext(typeof(CartApiContext))]
-    [Migration("20220816120505_initial1")]
+    [Migration("20220825054334_initial1")]
     partial class initial1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,7 +38,6 @@ namespace CartApi.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Qty")
@@ -46,7 +45,7 @@ namespace CartApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cart");
+                    b.ToTable("Carts");
                 });
 #pragma warning restore 612, 618
         }

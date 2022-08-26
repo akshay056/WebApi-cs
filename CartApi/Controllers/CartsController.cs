@@ -22,25 +22,21 @@ namespace CartApi.Controllers
         }
 
         // GET: api/Carts
+        
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Cart>>> GetCart()
+        public async Task<ActionResult<List<Cart>>> GetCart()
         {
-          if (_context.Cart == null)
-          {
-              return NotFound();
-          }
-            return await _context.Cart.ToListAsync();
+            return Ok(await _context.Carts.ToListAsync());
         }
-
         // GET: api/Carts/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Cart>> GetCart(int id)
         {
-          if (_context.Cart == null)
+          if (_context.Carts == null)
           {
               return NotFound();
           }
-            var cart = await _context.Cart.FindAsync(id);
+            var cart = await _context.Carts.FindAsync(id);
 
             if (cart == null)
             {
@@ -53,72 +49,50 @@ namespace CartApi.Controllers
         // PUT: api/Carts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCart(int id, Cart cart)
+
+        public async Task<IActionResult> PutCart(Cart cart)
         {
-            if (id != cart.Id)
-            {
-                return BadRequest();
-            }
+            var dbCart = await _context.Carts.FindAsync(cart.Id);
+            if (dbCart == null)
+                return BadRequest("Hero not found.");
 
-            _context.Entry(cart).State = EntityState.Modified;
+            dbCart.ProductId = cart.ProductId;
+            dbCart.ProductName = cart.ProductName;
+            dbCart.Qty = cart.Qty;
+            dbCart.Price = cart.Price;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CartExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Carts
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Cart>> PostCart(Cart cart)
-        {
-          if (_context.Cart == null)
-          {
-              return Problem("Entity set 'CartApiContext.Cart'  is null.");
-          }
-            _context.Cart.Add(cart);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCart", new { id = cart.Id }, cart);
+            return Ok(await _context.Carts.ToListAsync());
+        }
+            // POST: api/Carts
+            // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+            [HttpPost]
+        public async Task<ActionResult<Cart>> PostCart(Cart cart)
+        {
+            _context.Carts.Add(cart);
+            await _context.SaveChangesAsync();
+
+            return Ok(await _context.Carts.ToListAsync());
         }
 
         // DELETE: api/Carts/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCart(int id)
         {
-            if (_context.Cart == null)
-            {
-                return NotFound();
-            }
-            var cart = await _context.Cart.FindAsync(id);
-            if (cart == null)
-            {
-                return NotFound();
-            }
+            var dbCart = await _context.Carts.FindAsync(id);
+            if (dbCart == null)
+                return BadRequest("Hero not found.");
 
-            _context.Cart.Remove(cart);
+            _context.Carts.Remove(dbCart);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(await _context.Carts.ToListAsync());
         }
 
         private bool CartExists(int id)
         {
-            return (_context.Cart?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Carts?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
